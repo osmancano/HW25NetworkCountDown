@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 public class RestNetworkController {
-    String[] nodes = {"192.1","sd","","","",""};
     @RequestMapping(path = "/rest/call/{number}", method = RequestMethod.GET)
     public TIYResponse drawCard(@PathVariable(required = false) Integer number) throws Exception{
         if(number == null){
